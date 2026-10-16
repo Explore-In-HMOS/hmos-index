@@ -65,7 +65,7 @@ There is no official DevEco Studio build for Linux. You can build and sign with 
 Not for UI work. You do need one for sensors, NFC, the digital crown, Wear Engine, health data and real performance measurements.
 
 **Can I run a Smart Wearable project on a sport watch, or the reverse?**
-No. They are different platforms with different frameworks. Check for the `sportwatch-` prefix. If you need both, build the Lite Wearable version first and generate a Smart Wearable JS project from it with the [Adapter Project](https://github.com/Explore-In-HMOS-Wearable/adapter-project). The generator only works in that direction.
+No. They are different platforms with different frameworks. Check for the `sportwatch-` prefix. If you need both, build the Lite Wearable version first and generate a Smart Wearable JS project from it with the [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project). The generator only works in that direction.
 
 **The project targets a newer SDK than mine. What now?**
 Update DevEco Studio. That is almost always faster than porting the project backwards.

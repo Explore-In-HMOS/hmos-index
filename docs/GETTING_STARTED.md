@@ -60,7 +60,7 @@ Keep at least those versions installed. A version mismatch is the most common re
 ## 3. Opening a project
 
 ```bash
-git clone https://github.com/Explore-In-HMOS-Wearable/<project-name>.git
+git clone https://github.com/Explore-In-HMOS/<project-name>.git
 cd <project-name>
 ```
 
@@ -194,7 +194,7 @@ Device support differs by model. Each project README has a **Constraints and Res
 
 ### Building for both platforms
 
-The [Adapter Project](https://github.com/Explore-In-HMOS-Wearable/adapter-project) provides wrapper libraries with one API surface across both platforms, plus a generator:
+The [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project) provides wrapper libraries with one API surface across both platforms, plus a generator:
 
 ```bash
 node generator.js gen-smart lite-app smart-app
@@ -241,7 +241,7 @@ hdc shell screencap -p /data/local/tmp/shot.png
 hdc file recv /data/local/tmp/shot.png ./shot.png
 ```
 
-To wrap a screenshot in a watch device frame, use the [Mockup Generator](https://explore-in-hmos-wearable.github.io/mockup-generator/).
+To wrap a screenshot in a watch device frame, use the [Mockup Generator](https://explore-in-hmos.github.io/mockup-generator/).
 
 ## 8. Working with an AI assistant
 
