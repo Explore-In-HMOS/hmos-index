@@ -1,15 +1,19 @@
 # Libraries, cross platform and companion projects
 
-8 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
+10 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
 
 ## Contents
 
-- [Sensors and Health](#sensors-and-health-sensors-and-health) (1)
+- [Sensors and Health](#sensors-and-health-sensors-and-health) (2)
 - [Connectivity and Network](#connectivity-and-network-connectivity-and-network) (4)
 - [Data and Storage](#data-and-storage-data-and-storage) (1)
-- [UI and Interaction](#ui-and-interaction-ui-and-interaction) (2)
+- [UI and Interaction](#ui-and-interaction-ui-and-interaction) (3)
 
 ## Sensors and Health (`sensors-and-health`)
+
+### library-workoutcore
+ArkTS sport tracking library for HarmonyOS watches reporting distance, speed, steps, heading, heart rate, swim strokes and swim style.
+Kits: CoreFileKit, LocationKit, SensorServiceKit. Topics: fitness, gps, library, ohpm, sensors, swimming, workout-tracker. URL: https://github.com/Explore-In-HMOS/library-workoutcore
 
 ### flutter-healthkit
 Flutter client for Huawei Health Kit REST APIs with OAuth2, token refresh, data collectors and health-record I/O using Riverpod and Dio.
@@ -44,6 +48,10 @@ Kits: ArkData. Topics: arkdata, database, library, ohpm, orm, relational-databas
 ### library-app-lock
 ArkTS app lock library for HarmonyOS that wraps app content in a lock screen unlocked with face, fingerprint or PIN authentication.
 Kits: CryptoArchitectureKit, UserAuthenticationKit. Topics: app-lock, biometric-authentication, library, ohpm, user-authentication-kit. URL: https://github.com/Explore-In-HMOS/library-app-lock
+
+### library-portable-debug-panel
+ArkTS debug library for HarmonyOS apps that captures console and hilog output natively, shows it in a floating overlay and saves it as JSONL.
+Kits: CoreFileKit. Topics: debugging, developer-tools, hilog, library, logging, ohpm. URL: https://github.com/Explore-In-HMOS/library-portable-debug-panel
 
 ### library-shimmer
 ArkTS shimmer loading library for HarmonyOS watches that sweeps a highlight across skeleton placeholders while content loads.

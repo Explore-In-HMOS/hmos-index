@@ -1,6 +1,6 @@
 # Lite Wearable / Sportwatch projects (JavaScript)
 
-84 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
+85 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
 
 ## Contents
 
@@ -9,7 +9,7 @@
 - [Media and Audio](#media-and-audio-media-and-audio) (2)
 - [Connectivity and Network](#connectivity-and-network-connectivity-and-network) (9)
 - [Data and Storage](#data-and-storage-data-and-storage) (9)
-- [UI and Interaction](#ui-and-interaction-ui-and-interaction) (41)
+- [UI and Interaction](#ui-and-interaction-ui-and-interaction) (42)
 
 ## Sensors and Health (`sensors-and-health`)
 
@@ -302,6 +302,10 @@ Modules: @system.app. Topics: animation, rotation, swipe. SDK: HarmonyOS SDK 4.0
 ### sportwatch-how-to-create-swiper
 Swiper component sample for Huawei Lite Wearable watches with health-metric pages, dot indicators and simulated sensor-data updates.
 Modules: none imported. Topics: carousel, swiper. SDK: HarmonyOS SDK 4.0.0(10). URL: https://github.com/Explore-In-HMOS/sportwatch-how-to-create-swiper
+
+### sportwatch-how-to-implement-adaptive-layout
+Adaptive layout codelab for Huawei Lite Wearable watches using CSS @media queries to serve separate UIs for round and rectangular screens.
+Modules: @system.app. Topics: adaptive-layout, media-queries, responsive-design. SDK: HarmonyOS SDK 6.1.1(24). URL: https://github.com/Explore-In-HMOS/sportwatch-how-to-implement-adaptive-layout
 
 ### sportwatch-how-to-implement-and-customize-qr-code
 QR code codelab for Huawei Lite Wearable watches with on-device rendering, dynamic content and configurable code colors and sizes.

@@ -1,16 +1,16 @@
 # Smart Wearable how-to projects (ArkTS)
 
-253 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
+271 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
 
 ## Contents
 
-- [Sensors and Health](#sensors-and-health-sensors-and-health) (17)
-- [Location and Maps](#location-and-maps-location-and-maps) (28)
-- [Media and Audio](#media-and-audio-media-and-audio) (26)
-- [Connectivity and Network](#connectivity-and-network-connectivity-and-network) (29)
+- [Sensors and Health](#sensors-and-health-sensors-and-health) (23)
+- [Location and Maps](#location-and-maps-location-and-maps) (29)
+- [Media and Audio](#media-and-audio-media-and-audio) (29)
+- [Connectivity and Network](#connectivity-and-network-connectivity-and-network) (33)
 - [Background and Notifications](#background-and-notifications-background-and-notifications) (16)
-- [Data and Storage](#data-and-storage-data-and-storage) (22)
-- [UI and Interaction](#ui-and-interaction-ui-and-interaction) (115)
+- [Data and Storage](#data-and-storage-data-and-storage) (25)
+- [UI and Interaction](#ui-and-interaction-ui-and-interaction) (116)
 
 ## Sensors and Health (`sensors-and-health`)
 
@@ -34,9 +34,21 @@ Kits: RemoteCommunicationKit, SensorServiceKit. Topics: health-data, heart-rate,
 Heart-rate sensor codelab for HarmonyOS watches with live Sensor Service Kit readings sent to a paired phone app via Wear Engine.
 Kits: SensorServiceKit, WearEngine. Topics: heart-rate, sensors, wear-engine. SDK: HarmonyOS SDK 5.1.0(18). URL: https://github.com/Explore-In-HMOS/how-to-get-heart-rate-with-sensorkit
 
+### how-to-handle-multimodal-gestures
+Multimodal input codelab for HarmonyOS watches combining touch pan, digital crown rotation and accelerometer wrist tilt with per-frame updates.
+Kits: ArkData, ArkGraphics2D, SensorServiceKit. Topics: accelerometer, digital-crown, display-sync, gestures, input-handling, sensor-service-kit. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-handle-multimodal-gestures
+
+### how-to-implement-adaptive-haptics
+Adaptive haptics codelab for HarmonyOS watches that checks preset vibration support and falls back to timed vibrations and composite patterns.
+Kits: SensorServiceKit. Topics: haptic-feedback, haptics, sensor-service-kit, vibrator. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-implement-adaptive-haptics
+
 ### how-to-implement-realtime-inclinometer
 Realtime inclinometer codelab for HarmonyOS watches fusing accelerometer and gyroscope data with a complementary filter for pitch and roll.
 Kits: SensorServiceKit. Topics: accelerometer, gyroscope, inclinometer, sensor-fusion, sensor-service-kit, sensors. SDK: HarmonyOS SDK 6.0.1(21). URL: https://github.com/Explore-In-HMOS/how-to-implement-realtime-inclinometer
+
+### how-to-implement-sun-exposure-risk
+Sun exposure risk codelab for HarmonyOS watches fusing ambient light and temperature sensors into a tiered score with haptic alerts.
+Kits: SensorServiceKit. Topics: ambient-light, health, sensor-fusion, sensor-service-kit, temperature-sensor, vibrator. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-implement-sun-exposure-risk
 
 ### how-to-make-compass-app
 Compass sample for HarmonyOS watches calculating azimuth from rotation-vector sensor data and rotating the compass display in real time.
@@ -58,6 +70,10 @@ Kits: core ArkUI/Ability kits only. Topics: animation, breathing-exercises, them
 Ambient light sensor sample for HarmonyOS with live lux readings, adaptive UI themes and background monitoring using Sensor Service Kit.
 Kits: BackgroundTasksKit, SensorServiceKit. Topics: background-tasks, light-sensor, sensors, theming. SDK: HarmonyOS SDK 5.1.0. URL: https://github.com/Explore-In-HMOS/how-to-make-smart-lux
 
+### how-to-make-sweet-match
+Match-3 candy game for HarmonyOS watches with swipe and tap swaps, cascading combos, auto reshuffle and a score progress ring.
+Kits: CryptoArchitectureKit, SensorServiceKit. Topics: animation, game, gestures, match-3, puzzle-game, vibrator. SDK: HarmonyOS SDK 6.0.2(22). URL: https://github.com/Explore-In-HMOS/how-to-make-sweet-match
+
 ### how-to-make-wrist-fishing
 Wrist-flick fishing game codelab for HarmonyOS watches detecting upward pulls from accelerometer and gyroscope data with Canvas and haptics.
 Kits: SensorServiceKit. Topics: canvas, game, gesture-detection, haptics, sensor-service-kit, sensors. SDK: HarmonyOS SDK 6.0.2(22). URL: https://github.com/Explore-In-HMOS/how-to-make-wrist-fishing
@@ -78,9 +94,17 @@ Kits: SensorServiceKit. Topics: magnetic-field, magnetometer, sensors. SDK: Harm
 Particle animation sample for HarmonyOS watches visualizing inhale/exhale cycles with expanding and contracting particles for guided breathing.
 Kits: core ArkUI/Ability kits only. Topics: breathing-exercises, particle-animation. SDK: HarmonyOS SDK 5.0.2(14). URL: https://github.com/Explore-In-HMOS/how-to-use-particle-for-breath-exercises
 
+### how-to-use-qr-health-login-standalone
+Standalone watch app that signs in to Health Kit with a QR code using the OAuth 2.0 Device Code flow and reads step data without a backend.
+Kits: ArkData, ImageKit, NetworkKit, ScanKit. Topics: account-kit, device-code-flow, health-kit, oauth2, qr-code, scan-kit, step-counter. URL: https://github.com/Explore-In-HMOS/how-to-use-qr-health-login-standalone
+
 ### how-to-use-sensorkit-in-wearable
 Sensor and haptics showcase for HarmonyOS watches with capability detection, permission handling, live readings and configurable vibration patterns.
 Kits: LocalizationKit, SensorServiceKit. Topics: device-capabilities, haptics, sensor-service-kit, sensors. URL: https://github.com/Explore-In-HMOS/how-to-use-sensorkit-in-wearable
+
+### how-to-use-wear-detection-for-workout
+Wear detection codelab for HarmonyOS watches rejecting heart rate samples off the wrist and auto-pausing workouts with the WEAR_DETECTION sensor.
+Kits: CryptoArchitectureKit, SensorServiceKit. Topics: fitness, heart-rate, sensor-service-kit, vibrator, wear-detection, workout-tracker. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-use-wear-detection-for-workout
 
 ## Location and Maps (`location-and-maps`)
 
@@ -184,6 +208,10 @@ Kits: MapKit. Topics: map-kit, map-markers, maps. SDK: HarmonyOS SDK 5.0.2(14). 
 Location-change monitoring demo for HarmonyOS watches with background tracking and vibration alerts when movement exceeds a distance threshold.
 Kits: BackgroundTasksKit, LocationKit, MapKit. Topics: background-tasks, haptics, location. SDK: HarmonyOS SDK 5.0.2(14). URL: https://github.com/Explore-In-HMOS/how-to-make-following-app
 
+### how-to-manage-global-data-during-navigation
+Navigation data sync codelab for HarmonyOS watches comparing globals, AppStorage, NavPathStack results and a route manager to avoid stale values.
+Kits: core ArkUI/Ability kits only. Topics: appstorage, lifecycle, navigation, navpathstack, state-management. SDK: HarmonyOS SDK 6.0.1(21). URL: https://github.com/Explore-In-HMOS/how-to-manage-global-data-during-navigation
+
 ### how-to-parse-gpx-file-for-third-party-map-api
 GPX parsing codelab for HarmonyOS watches demonstrating route-coordinate extraction and visualization through a third-party map API.
 Kits: core ArkUI/Ability kits only. Topics: gpx, maps, route-visualization, xml. SDK: HarmonyOS SDK 6.0.0(20). URL: https://github.com/Explore-In-HMOS/how-to-parse-gpx-file-for-third-party-map-api
@@ -266,6 +294,10 @@ Kits: ImageKit, LocalizationKit, MediaKit. Topics: frame-extraction, media-kit, 
 QR code generation sample for HarmonyOS using the built-in QRCode component and Scan Kit, with ArkTS examples for wearable interfaces.
 Kits: ImageKit, ScanKit. Topics: qr-code, scan-kit. SDK: HarmonyOS SDK 5.1.0(18). URL: https://github.com/Explore-In-HMOS/how-to-generate-qr-code
 
+### how-to-handle-resource-cleanup-in-media-operations
+Media cleanup codelab for HarmonyOS watches releasing AVPlayer, AVRecorder and file descriptors in every error path with try/finally.
+Kits: AudioKit, CoreFileKit, MediaKit. Topics: avplayer, avrecorder, core-file-kit, error-handling, media-kit, resource-cleanup. URL: https://github.com/Explore-In-HMOS/how-to-handle-resource-cleanup-in-media-operations
+
 ### how-to-implement-camera-kit-on-kids-watch
 Camera Kit codelab for Huawei Kids Watch using the cameraPicker system picker to take photos without requesting camera permission.
 Kits: CameraKit. Topics: camera, camera-kit, camera-picker, kids-watch. SDK: HarmonyOS SDK 6.1.1(24). URL: https://github.com/Explore-In-HMOS/how-to-implement-camera-kit-on-kids-watch
@@ -277,6 +309,10 @@ Kits: core ArkUI/Ability kits only. Topics: page-indicator, swiper, ui-component
 ### how-to-implement-fft
 Pure ArkTS radix-2 FFT codelab for HarmonyOS watches analysing live microphone audio with windowing, dBFS scaling and peak detection.
 Kits: AudioKit. Topics: audio-kit, dsp, fft, signal-processing, spectrum-analyzer. SDK: HarmonyOS SDK 6.0.1(21). URL: https://github.com/Explore-In-HMOS/how-to-implement-fft
+
+### how-to-implement-peak-hold
+Sound level meter codelab for HarmonyOS watches measuring microphone RMS in dBFS with EMA smoothing and peak hold on a round gauge.
+Kits: AudioKit. Topics: audio-kit, dbfs, microphone, peak-hold, signal-processing, sound-level-meter. SDK: HarmonyOS SDK 5.1.0(18). URL: https://github.com/Explore-In-HMOS/how-to-implement-peak-hold
 
 ### how-to-make-sound-wave
 Canvas animation codelab for HarmonyOS watches generating simulated linear and circular sound-wave visualizations.
@@ -293,6 +329,10 @@ Kits: AudioKit, CoreFileKit. Topics: audio-kit, audio-player, audio-recording. S
 ### how-to-record-voice
 Minimal voice recorder sample for HarmonyOS with quick microphone recording and local voice-clip saving using ArkTS and ArkUI.
 Kits: AudioKit, CoreFileKit, MediaKit. Topics: audio-recording, voice-recorder. SDK: HarmonyOS SDK 5.1.0(18). URL: https://github.com/Explore-In-HMOS/how-to-record-voice
+
+### how-to-share-resourcemanager-between-ability-and-components
+ResourceManager sharing codelab for HarmonyOS watches passing the ability context to a singleton audio service with init guards and cleanup.
+Kits: LocalizationKit, MediaKit. Topics: avplayer, lifecycle, rawfile, resource-manager, uiability. SDK: HarmonyOS SDK 6.0.1(21) compatibility. URL: https://github.com/Explore-In-HMOS/how-to-share-resourcemanager-between-ability-and-components
 
 ### how-to-use-image-effect
 Image-filter sample for HarmonyOS watches with sepia, grayscale and color adjustments through a compact photo-effects interface.
@@ -327,6 +367,10 @@ Kits: ArkData, NetworkKit, NotificationKit. Topics: certificates, diagnostics, m
 ### how-to-build-nfc-access-badge
 NFC reader-mode codelab for HarmonyOS watches with NDEF badge parsing, foreground registration, NFC-A diagnostics and deterministic demo scans.
 Kits: ConnectivityKit. Topics: access-control, connectivity-kit, ndef, nfc. SDK: HarmonyOS SDK 6.0.1(21). URL: https://github.com/Explore-In-HMOS/how-to-build-nfc-access-badge
+
+### how-to-build-smart-push-dispatcher
+Push Kit codelab for HarmonyOS watches that gets the push token and AAID, signs a service account JWT and sends notification messages.
+Kits: CryptoArchitectureKit, ImageKit, LocalizationKit, NetworkKit, NotificationKit, PushKit. Topics: jwt, notification-kit, push-kit, push-notifications. SDK: HarmonyOS SDK 6.0.1(21). URL: https://github.com/Explore-In-HMOS/how-to-build-smart-push-dispatcher
 
 ### how-to-build-web-download-manager
 ArkWeb download manager codelab for HarmonyOS watches with queued web downloads, progress callbacks, item metadata and streamed response handling.
@@ -364,9 +408,21 @@ Kits: ConnectivityKit. Topics: bluetooth-low-energy, gatt, iot, smart-lighting. 
 TCP socket server codelab for HarmonyOS watches implementing a local HTTP echo server with on-screen request logging.
 Kits: NetworkKit. Topics: http-server, networking, sockets, tcp. SDK: HarmonyOS SDK 5.0.2(14). URL: https://github.com/Explore-In-HMOS/how-to-create-tcp-server
 
+### how-to-implement-countly-analytics
+Countly analytics codelab for HarmonyOS watches integrating the Countly SDK for session and view tracking, custom events and offline mode.
+Kits: NetworkKit. Topics: analytics, countly, event-tracking, third-party-sdk. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-implement-countly-analytics
+
+### how-to-implement-standalone-network-requests-background-tasks
+Standalone networking codelab for HarmonyOS watches sending HTTP requests over Wi-Fi or cellular without the phone, with background sync.
+Kits: ArkData, BackgroundTasksKit, NetworkKit. Topics: background-tasks-kit, continuous-task, http, network-kit, standalone, work-scheduler. SDK: HarmonyOS SDK 6.1.1(24). URL: https://github.com/Explore-In-HMOS/how-to-implement-standalone-network-requests-background-tasks
+
 ### how-to-implement-tcp-connection
 TCP socket connection codelab for HarmonyOS watches with user-entered peer IP addresses for communication between devices on the same network.
 Kits: NetworkKit. Topics: networking, sockets, tcp. SDK: HarmonyOS 5.1.0(18). URL: https://github.com/Explore-In-HMOS/how-to-implement-tcp-connection
+
+### how-to-initiate-phone-calls-with-telephony-kit
+Telephony Kit codelab for HarmonyOS watches that opens the built-in dialer with makeCall and checks for a SIM card.
+Kits: TelephonyKit. Topics: phone-call, sim, telephony-kit. SDK: HarmonyOS SDK 6.0.0(20). URL: https://github.com/Explore-In-HMOS/how-to-initiate-phone-calls-with-telephony-kit
 
 ### how-to-make-booklist
 Remote book-list sample for HarmonyOS using HTTP requests, dynamic ArkUI list rendering and interactive swipe actions.
@@ -508,6 +564,10 @@ Kits: ArkData. Topics: arkts-utils, binary-data, serialization, xml. SDK: Harmon
 Watch-face setup wizard for HarmonyOS wearables using a stepper, live preview, responsive layout and persistent dial, complication and color settings.
 Kits: ArkData. Topics: state-persistence, stepper, watch-face. SDK: HarmonyOS SDK 6.1.1(24). URL: https://github.com/Explore-In-HMOS/how-to-build-js-stepper-toolbar
 
+### how-to-build-jwt-with-crypto-kit
+JWT signing codelab for HarmonyOS watches using Crypto Architecture Kit PS256 RSA-PSS signatures to get a service account access token.
+Kits: CryptoArchitectureKit, NetworkKit. Topics: crypto-architecture-kit, jwt, network-kit, oauth2, rsa-pss, security. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-build-jwt-with-crypto-kit
+
 ### how-to-build-local-database
 ArkData relational database codelab for HarmonyOS watches, using simulated workout records to demonstrate local persistence and history views.
 Kits: ArkData. Topics: arkdata, relational-database, workout-tracker. SDK: | HarmonyOS Next |. URL: https://github.com/Explore-In-HMOS/how-to-build-local-database
@@ -536,6 +596,10 @@ Kits: CryptoArchitectureKit. Topics: 3des, cryptography, hmac, key-generation. S
 Device attestation codelab for HarmonyOS watches using Universal Keystore Kit HUKS key attestation in the TEE and certificate chain checks.
 Kits: DeviceCertificateKit, LocalizationKit, UniversalKeystoreKit. Topics: device-certificate-kit, huks, key-attestation, security, universal-keystore-kit. SDK: HarmonyOS SDK 6.0.0(20). URL: https://github.com/Explore-In-HMOS/how-to-implement-huks-attestation
 
+### how-to-implement-local-file-storage
+Quick notes codelab for HarmonyOS watches storing files in the app sandbox with Core File Kit atomic writes, taskpool and storage monitoring.
+Kits: CoreFileKit. Topics: core-file-kit, file-storage, mvvm, sandbox, state-management-v2, taskpool. SDK: HarmonyOS SDK 5.1.0(18) or later. URL: https://github.com/Explore-In-HMOS/how-to-implement-local-file-storage
+
 ### how-to-implement-screenshot-prevention
 Screenshot prevention codelab for HarmonyOS watches using setWindowPrivacyMode to black out captures and recordings of sensitive screens.
 Kits: core ArkUI/Ability kits only. Topics: screenshot-prevention, security, window-privacy. SDK: HarmonyOS SDK 6.1.1(24). URL: https://github.com/Explore-In-HMOS/how-to-implement-screenshot-prevention
@@ -547,6 +611,10 @@ Kits: AssetStoreKit. Topics: asset-store-kit, secure-storage, security. SDK: Har
 ### how-to-implement-theme-aware-swipe-indicators
 Theme-aware Swiper indicator codelab for HarmonyOS watches switching light and dark mode with setColorMode and persisting it in preferences.
 Kits: ArkData. Topics: arkdata, dark-mode, swiper, theming. URL: https://github.com/Explore-In-HMOS/how-to-implement-theme-aware-swipe-indicators
+
+### how-to-install-debug-hap-files
+Setup guide for Huawei watches: enable developer options, connect DevEco Studio over Wi-Fi and install debug HAP files with HDC commands.
+Kits: core ArkUI/Ability kits only. Topics: debugging, deveco-studio, developer-options, hap, hdc. URL: https://github.com/Explore-In-HMOS/how-to-install-debug-hap-files
 
 ### how-to-make-localization-manager
 Localization and key-value storage sample for HarmonyOS watches with runtime language switching and create/read/delete operations.
@@ -901,6 +969,10 @@ Kits: IAPKit. Topics: iap-kit, in-app-purchase, payments. SDK: HarmonyOS 5.1.0(1
 ### how-to-draw-graphics
 ArkUI graphics codelab for HarmonyOS demonstrating circles, ellipses, lines, paths, polygons and polylines with interactive shape examples.
 Kits: core ArkUI/Ability kits only. Topics: shapes, vector-graphics. SDK: HarmonyOS SDK 5.1.0(18). URL: https://github.com/Explore-In-HMOS/how-to-draw-graphics
+
+### how-to-handle-rapid-input
+Rapid input codelab for HarmonyOS watches that prevents crashes from repeated taps and crown events with debounce, throttle and re-entrancy guards.
+Kits: ArkData. Topics: crash-prevention, debounce, digital-crown, error-manager, input-handling, throttle. SDK: HarmonyOS Stage Model. URL: https://github.com/Explore-In-HMOS/how-to-handle-rapid-input
 
 ### how-to-implement-logging-in-c
 Native HiLog codelab for HarmonyOS watches logging from C++ with OH_LOG macros, privacy specifiers and Node-API calls from ArkTS.
