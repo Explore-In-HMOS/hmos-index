@@ -43,7 +43,7 @@ flowchart LR
 |---|---|
 | 📘 [Getting Started](docs/GETTING_STARTED.md) | Accounts, DevEco Studio, signing, running on a real watch, hdc commands |
 | 🩺 [Troubleshooting](docs/TROUBLESHOOTING.md) | Sync, build, signing and connection errors, plus FAQ |
-| 📖 [HMOS User Guides](https://github.com/Explore-In-HMOS/hmos-user-guides) | In-depth guides such as the Health Service Kit and the SportWatch technical guide |
+| 📖 [HMOS User Guides](https://github.com/Explore-In-HMOS/hmos-user-guides) | In-depth guides such as the Health Service Kit and the SportWatch (Lite Wearable) technical guide |
 
 ### 🤖 Building with an AI assistant
 
