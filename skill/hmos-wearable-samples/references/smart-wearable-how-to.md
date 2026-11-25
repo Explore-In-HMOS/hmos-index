@@ -142,7 +142,7 @@ Kits: MapKit. Topics: digital-crown, map-camera, map-kit, maps. URL: https://git
 
 ### how-to-build-map-geofence-runner
 Location-aware running codelab for HarmonyOS watches using Map Kit nearby-place search and routing with Location Kit background geofence triggers.
-Kits: CryptoArchitectureKit, LocationKit, MapKit. Topics: geofencing, location-kit, map-kit, running. SDK: HarmonyOS NEXT SDK (API 12+). URL: https://github.com/Explore-In-HMOS/how-to-build-map-geofence-runner
+Kits: CryptoArchitectureKit, LocationKit, MapKit. Topics: geofencing, location-kit, map-kit, running. SDK: HarmonyOS SDK (API 12+). URL: https://github.com/Explore-In-HMOS/how-to-build-map-geofence-runner
 
 ### how-to-build-map-overlay-config
 Map overlay codelab for HarmonyOS watches using simulated hiking positions, waypoint annotations and polygon proximity checks without GPS access.
@@ -430,7 +430,7 @@ Kits: RemoteCommunicationKit. Topics: http-client, lists, remote-communication-k
 
 ### how-to-make-p2p-wifi-connection
 Wi-Fi Direct sample for HarmonyOS demonstrating P2P group creation, host/client modes, peer discovery and connection-status feedback.
-Kits: ConnectivityKit. Topics: device-discovery, networking, p2p, wifi-direct. SDK: HarmonyOS NEXT. URL: https://github.com/Explore-In-HMOS/how-to-make-p2p-wifi-connection
+Kits: ConnectivityKit. Topics: device-discovery, networking, p2p, wifi-direct. SDK: HarmonyOS. URL: https://github.com/Explore-In-HMOS/how-to-make-p2p-wifi-connection
 
 ### how-to-make-pagination
 API pagination sample for HarmonyOS watches using ArcList or List with next/previous controls to browse remotely loaded data.
@@ -570,7 +570,7 @@ Kits: CryptoArchitectureKit, NetworkKit. Topics: crypto-architecture-kit, jwt, n
 
 ### how-to-build-local-database
 ArkData relational database codelab for HarmonyOS watches, using simulated workout records to demonstrate local persistence and history views.
-Kits: ArkData. Topics: arkdata, relational-database, workout-tracker. SDK: | HarmonyOS Next |. URL: https://github.com/Explore-In-HMOS/how-to-build-local-database
+Kits: ArkData. Topics: arkdata, relational-database, workout-tracker. SDK: | HarmonyOS |. URL: https://github.com/Explore-In-HMOS/how-to-build-local-database
 
 ### how-to-build-network-firewall-tester
 ArkData RDB sample for HarmonyOS watches that stores and queries firewall-test records, demonstrating persistence, null handling and asset conversion.
@@ -992,7 +992,7 @@ Kits: core ArkUI/Ability kits only. Topics: digital-crown, input-events. SDK: Ha
 
 ### how-to-make-draggable-masonry-grid
 Draggable image grid codelab for HarmonyOS watches with Grid and WaterFlow masonry layouts, long-press reordering and visual drag feedback.
-Kits: core ArkUI/Ability kits only. Topics: drag-and-drop, grid-layout, masonry-layout. SDK: HarmonyOS NEXT SDK (Developer Preview). URL: https://github.com/Explore-In-HMOS/how-to-make-draggable-masonry-grid
+Kits: core ArkUI/Ability kits only. Topics: drag-and-drop, grid-layout, masonry-layout. SDK: HarmonyOS SDK (Developer Preview). URL: https://github.com/Explore-In-HMOS/how-to-make-draggable-masonry-grid
 
 ### how-to-make-light-bulb-game
 Light-bulb memory game for HarmonyOS watches with randomized prompts, tap-to-answer interactions, score tracking and toast feedback.

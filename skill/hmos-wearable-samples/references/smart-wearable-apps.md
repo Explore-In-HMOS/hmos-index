@@ -512,7 +512,7 @@ Kits: CalendarKit, FormKit, ImageKit. Topics: calendar, countdown, widgets. SDK:
 
 ### flowear
 Period and mood tracking sample for HarmonyOS watches with symptom surveys, health-data views, sleep summaries and meditation suggestions.
-Kits: AccountKit, ArkWeb, BackgroundTasksKit, CalendarKit, HealthServiceKit, NetworkKit, NotificationKit. Topics: mood-tracking, period-tracker, wellness. SDK: Framework: ArkUI (HarmonyOS NEXT). URL: https://github.com/Explore-In-HMOS/flowear
+Kits: AccountKit, ArkWeb, BackgroundTasksKit, CalendarKit, HealthServiceKit, NetworkKit, NotificationKit. Topics: mood-tracking, period-tracker, wellness. SDK: Framework: ArkUI (HarmonyOS). URL: https://github.com/Explore-In-HMOS/flowear
 
 ### food-ticket-card
 Food ticket payment demo for HarmonyOS watches with phone/email login, OTP check, PlusPay checkout, NFC reader-mode flow and campaign notifications.
@@ -836,7 +836,7 @@ Kits: CryptoArchitectureKit. Topics: cryptography, password-generator, qr-code, 
 
 ### wearable-ndk
 Native flexball simulation for HarmonyOS watches with OpenGL ES rendering, touch-driven metaballs, VSync and an ArkTS-to-C++ N-API bridge.
-Kits: core ArkUI/Ability kits only. Topics: cpp, napi, opengl-es, simulation. SDK: HarmonyOS NEXT (API 19+), OpenGL ES 3.0, EGL. URL: https://github.com/Explore-In-HMOS/wearable-ndk
+Kits: core ArkUI/Ability kits only. Topics: cpp, napi, opengl-es, simulation. SDK: HarmonyOS (API 19+), OpenGL ES 3.0, EGL. URL: https://github.com/Explore-In-HMOS/wearable-ndk
 
 ### word-flip
 Vocabulary flashcard app for HarmonyOS watches with flip-to-reveal meanings, learned-state tracking and locally managed word lists.
