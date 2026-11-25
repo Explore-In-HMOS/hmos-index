@@ -9,7 +9,7 @@
   <img alt="How-To" src="https://img.shields.io/badge/How--To-315-2EA043?style=for-the-badge">
   <img alt="Libraries" src="https://img.shields.io/badge/Libraries-6-8957E5?style=for-the-badge">
   <img alt="Smart Wearable" src="https://img.shields.io/badge/ArkTS-Smart%20Wearable-C71D23?style=for-the-badge&logo=harmonyos&logoColor=white">
-  <img alt="Lite Wearable" src="https://img.shields.io/badge/JS-Lite%20Wearable-FF5500?style=for-the-badge&logo=harmonyos&logoColor=white">
+  <img alt="SportWatch" src="https://img.shields.io/badge/JS-SportWatch-FF5500?style=for-the-badge&logo=harmonyos&logoColor=white">
 </p>
 
 **[Start here](#-start-here)** &nbsp;·&nbsp; **[Browse projects](#-projects)** &nbsp;·&nbsp; **[Setup guide](docs/GETTING_STARTED.md)** &nbsp;·&nbsp; **[Troubleshooting](docs/TROUBLESHOOTING.md)**
@@ -34,7 +34,7 @@ flowchart LR
     A["Clone a project"] --> B["Open in<br/>DevEco Studio"]
     B --> C{"Repo name starts<br/>with sportwatch- ?"}
     C -->|"No"| D["Smart Wearable<br/>ArkTS"]
-    C -->|"Yes"| E["Lite Wearable<br/>JavaScript"]
+    C -->|"Yes"| E["SportWatch<br/>JavaScript"]
     D --> F["Previewer<br/>Emulator<br/>Real watch"]
     E --> G["Previewer<br/>Simulator"]
 ```
@@ -43,11 +43,11 @@ flowchart LR
 |---|---|
 | 📘 [Getting Started](docs/GETTING_STARTED.md) | Accounts, DevEco Studio, signing, running on a real watch, hdc commands |
 | 🩺 [Troubleshooting](docs/TROUBLESHOOTING.md) | Sync, build, signing and connection errors, plus FAQ |
-| 📖 [HMOS User Guides](https://github.com/Explore-In-HMOS/hmos-user-guides) | In-depth guides such as the Health Service Kit and the Lite Wearable technical guide |
+| 📖 [HMOS User Guides](https://github.com/Explore-In-HMOS/hmos-user-guides) | In-depth guides such as the Health Service Kit and the SportWatch technical guide |
 
 ### 🤖 Building with an AI assistant
 
-Install the **[HarmonyOS Wearable Samples skill](skill/hmos-wearable-samples/SKILL.md)** to give Claude, or any assistant that supports skills, a searchable index of all 572 projects. It answers "is there a sample for reading heart rate" with the repository name and URL instead of inventing ArkTS from memory, and it knows the Smart and Lite Wearable platforms are not interchangeable.
+Install the **[HarmonyOS Wearable Samples skill](skill/hmos-wearable-samples/SKILL.md)** to give Claude, or any assistant that supports skills, a searchable index of all 572 projects. It answers "is there a sample for reading heart rate" with the repository name and URL instead of inventing ArkTS from memory, and it knows the Smart Wearable and SportWatch platforms are not interchangeable.
 
 ```bash
 unzip skill/hmos-wearable-samples.skill -d ~/.claude/skills/
@@ -63,8 +63,8 @@ Each project is a standalone repository. Clone only the one you need.
 |---|---|---|---|
 | [⌚ Sample Applications](#-sample-applications) | **206** | Smart Wearable | ArkTS |
 | [🛠️ How-To Projects](#-how-to-projects) | **271** | Smart Wearable | ArkTS |
-| [⌚ Sportwatch Applications](#-sportwatch-applications) | **41** | Lite Wearable | JavaScript |
-| [🛠️ Sportwatch How-To Projects](#-sportwatch-how-to-projects) | **44** | Lite Wearable | JavaScript |
+| [⌚ SportWatch Applications](#-sportwatch-applications) | **41** | SportWatch | JavaScript |
+| [🛠️ SportWatch How-To Projects](#-sportwatch-how-to-projects) | **44** | SportWatch | JavaScript |
 | [📦 Libraries](#-libraries) | **6** | Smart Wearable | ArkTS |
 | [🌐 Cross Platform Applications](#-cross-platform-applications) | **1** | Cross Platform | Flutter / React Native |
 | [📱 Companion Apps](#-companion-apps) | **3** | Android / iOS phone | Kotlin / Swift |
@@ -253,7 +253,7 @@ Each project is a standalone repository. Clone only the one you need.
 
 </details>
 
-### ⌚ Sportwatch Applications
+### ⌚ SportWatch Applications
 
 <details>
 <summary><b>Show all 41 projects</b></summary>
@@ -279,7 +279,7 @@ Each project is a standalone repository. Clone only the one you need.
 
 </details>
 
-### 🛠️ Sportwatch How-To Projects
+### 🛠️ SportWatch How-To Projects
 
 <details>
 <summary><b>Show all 44 projects</b></summary>
@@ -339,7 +339,7 @@ Phone-side apps that exchange data with a watch through Huawei Wear Engine. Inst
 
 | Phone app | Phone OS | Watch app |
 |---|---|---|
-| [Moveo Mobile](https://github.com/Explore-In-HMOS/moveo-mobile) | Android | [Moveo](https://github.com/Explore-In-HMOS/sportwatch-moveo) (Lite Wearable) |
+| [Moveo Mobile](https://github.com/Explore-In-HMOS/moveo-mobile) | Android | [Moveo](https://github.com/Explore-In-HMOS/sportwatch-moveo) (SportWatch) |
 | [Wear Engine iOS To Watch File Message](https://github.com/Explore-In-HMOS/wear-engine-ios-to-watch-file-message) | iOS | Pair with your own watch app |
 | [Wear Engine Mobile To Watch](https://github.com/Explore-In-HMOS/wear-engine-mobile-to-watch) | Android | Pair with your own watch app |
 
@@ -349,7 +349,7 @@ Phone-side apps that exchange data with a watch through Huawei Wear Engine. Inst
 
 | Tool | What it does |
 |---|---|
-| [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project) | One API for both platforms, plus a generator that converts a Lite Wearable project into a Smart Wearable one |
+| [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project) | One API for both platforms, plus a generator that converts a SportWatch project into a Smart Wearable one |
 | [Mockup Generator](https://explore-in-hmos.github.io/mockup-generator/) | Wraps your screenshots in watch device frames |
 | [Wearable Samples skill](skill/hmos-wearable-samples/SKILL.md) | Makes this catalog searchable from inside an AI coding assistant |
 

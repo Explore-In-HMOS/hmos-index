@@ -17,7 +17,7 @@ Grouped by where things break. If your symptom is not listed, the Huawei Develop
 | Symptom | Cause | Fix |
 |---|---|---|
 | Sync hangs or fails on first open | `ohpm` cannot reach the registry | Check your network and proxy, then **File → Sync and Refresh Project** |
-| Project structure not recognised | You opened a sub-folder | Reopen the folder containing `build-profile.json5`, or `config.json` for Lite Wearable |
+| Project structure not recognised | You opened a sub-folder | Reopen the folder containing `build-profile.json5`, or `config.json` for SportWatch |
 | Odd build errors after switching branches | Stale build cache | **Build → Clean Project**, then rebuild |
 | Unicode or path errors during build | Spaces or non-ASCII characters in the project path | Move the project somewhere simple such as `D:\dev\project` |
 | Previewer will not start | Previewer process stuck | Restart DevEco Studio, then run **Diagnose** from the welcome screen |
@@ -64,8 +64,8 @@ There is no official DevEco Studio build for Linux. You can build and sign with 
 **Do I need a physical watch?**
 Not for UI work. You do need one for sensors, NFC, the digital crown, Wear Engine, health data and real performance measurements.
 
-**Can I run a Smart Wearable project on a sport watch, or the reverse?**
-No. They are different platforms with different frameworks. Check for the `sportwatch-` prefix. If you need both, build the Lite Wearable version first and generate a Smart Wearable JS project from it with the [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project). The generator only works in that direction.
+**Can I run a Smart Wearable project on a SportWatch, or the reverse?**
+No. They are different platforms with different frameworks. Check for the `sportwatch-` prefix. If you need both, build the SportWatch version first and generate a Smart Wearable JS project from it with the [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project). The generator only works in that direction.
 
 **The project targets a newer SDK than mine. What now?**
 Update DevEco Studio. That is almost always faster than porting the project backwards.

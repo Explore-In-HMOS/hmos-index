@@ -11,7 +11,7 @@ New to HarmonyOS? Read straight through. Already have DevEco Studio working? Jum
 3. [Opening a project](#3-opening-a-project)
 4. [Previewer and emulator](#4-previewer-and-emulator)
 5. [Run on a Smart Wearable](#5-run-on-a-smart-wearable)
-6. [Run on a Sportwatch](#6-run-on-a-sportwatch)
+6. [Run on a SportWatch](#6-run-on-a-sportwatch)
 7. [hdc command reference](#7-hdc-command-reference)
 8. [Working with an AI assistant](#8-working-with-an-ai-assistant)
 
@@ -69,7 +69,7 @@ cd <project-name>
 | Platform | Look for |
 |---|---|
 | Smart Wearable | `build-profile.json5`, `oh-package.json5`, `AppScope/`, `entry/` |
-| Lite Wearable | `entry/src/main/config.json` and a `js/` source folder |
+| SportWatch | `entry/src/main/config.json` and a `js/` source folder |
 
 Opening `entry/` by mistake gives you a project that looks fine but never builds. Avoid paths with spaces or non-ASCII characters, the toolchain does not always handle them.
 
@@ -98,7 +98,7 @@ Note `bundleName` in `AppScope/app.json5`. You need it later if you sign manuall
 
 ## 4. Previewer and emulator
 
-**Previewer:** open a page file (`Index.ets`, or `index.hml` for Lite Wearable) and click **Previewer** in the right sidebar. It hot reloads as you type and is the fastest way to work on layout, styling and round screen adaptation. It cannot give you sensors, NFC, Bluetooth, Wear Engine or health data.
+**Previewer:** open a page file (`Index.ets`, or `index.hml` for SportWatch) and click **Previewer** in the right sidebar. It hot reloads as you type and is the fastest way to work on layout, styling and round screen adaptation. It cannot give you sensors, NFC, Bluetooth, Wear Engine or health data.
 
 **Emulator:** **Tools → Device Manager**, create a device, then **Launch**. The system image downloads on first run. Wearable coverage varies by DevEco Studio release. If your version offers no watch profile, use the Previewer for UI and a physical watch for everything else.
 
@@ -167,9 +167,9 @@ A package name that does not match `bundleName` is the classic cause of an insta
 
 Select the watch in the device selector, select the `entry` module, then press **Run** to install and launch, or **Debug** to attach breakpoints. Runtime output goes to the **Log** panel, or `hdc shell hilog`.
 
-## 6. Run on a Sportwatch
+## 6. Run on a SportWatch
 
-Repositories prefixed with `sportwatch-` target Lite Wearable devices running HarmonyOS LiteOS. They are written in JavaScript with HML markup and CSS, and configured through `config.json`.
+Repositories prefixed with `sportwatch-` target SportWatch devices running HarmonyOS LiteOS. They are written in JavaScript with HML markup and CSS, and configured through `config.json`.
 
 ```
 <project>/
@@ -186,9 +186,9 @@ Repositories prefixed with `sportwatch-` target Lite Wearable devices running Ha
 ```
 
 1. Open the project root and let it sync. The device type in `config.json` tells the IDE which toolchain to use.
-2. Open `pages/index/index.hml` and click **Previewer**. This is the primary development loop for Lite Wearable: layout, styling, page routing and most interaction logic are all verifiable here.
-3. For a full application run, launch the Lite Wearable simulator from **Tools → Device Manager**, if your DevEco Studio version provides one.
-4. To deploy to a physical sport watch, the device must expose developer and debug mode. If it does, follow [steps 1 to 5 above](#5-run-on-a-smart-wearable) exactly as written.
+2. Open `pages/index/index.hml` and click **Previewer**. This is the primary development loop for SportWatch: layout, styling, page routing and most interaction logic are all verifiable here.
+3. For a full application run, launch the SportWatch (Lite Wearable) simulator from **Tools → Device Manager**, if your DevEco Studio version provides one.
+4. To deploy to a physical SportWatch, the device must expose developer and debug mode. If it does, follow [steps 1 to 5 above](#5-run-on-a-smart-wearable) exactly as written.
 
 Device support differs by model. Each project README has a **Constraints and Restrictions → Supported Devices** section listing what that sample was verified on. Treat it as the source of truth for that project.
 
@@ -200,7 +200,7 @@ The [Adapter Project](https://github.com/Explore-In-HMOS/adapter-project) provid
 node generator.js gen-smart lite-app smart-app
 ```
 
-It converts a Lite Wearable project into a Smart Wearable JS project, handling configuration and file layout. It covers features common to both platforms, and currently supports Smart Wearable JS projects rather than ArkTS. The recommended workflow is to build the Lite Wearable version first and generate the Smart Wearable one from it.
+It converts a SportWatch project into a Smart Wearable JS project, handling configuration and file layout. It covers features common to both platforms, and currently supports Smart Wearable JS projects rather than ArkTS. The recommended workflow is to build the SportWatch version first and generate the Smart Wearable one from it.
 
 ## 7. hdc command reference
 
@@ -251,7 +251,7 @@ If you develop with Claude, Claude Code or another assistant that supports skill
 unzip skill/hmos-wearable-samples.skill -d ~/.claude/skills/
 ```
 
-With the skill installed, "is there a sample that reads heart rate on the watch" returns the repository name and URL, and the assistant will flag when you are mixing up Smart and Lite Wearable APIs.
+With the skill installed, "is there a sample that reads heart rate on the watch" returns the repository name and URL, and the assistant will flag when you are mixing up Smart Wearable and SportWatch APIs.
 
 The skill carries project descriptions, not source code. When you want working code, clone the repository it points you to.
 

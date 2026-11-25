@@ -3,7 +3,7 @@
 Read this first to answer "is there a sample for X". Three indexes, each listing every matching project with how-to projects before sample applications:
 
 1. [Smart Wearable kits](#smart-wearable-kits): `@kit.*` imports detected in each project's ArkTS source. The core kits every project uses (AbilityKit, ArkTS, ArkUI, BasicServicesKit, PerformanceAnalysisKit, TestKit) are left out because they do not narrow anything down.
-2. [Lite Wearable modules](#lite-wearable-modules): `@system.*` and `@ohos.*` imports in each `sportwatch-` project's JavaScript source.
+2. [SportWatch modules](#sportwatch-modules): `@system.*` and `@ohos.*` imports in each `sportwatch-` project's JavaScript source.
 3. [Topics](#topics): the GitHub topics on each repository, for capabilities that are not a kit, such as `digital-crown`, `heart-rate` or `pull-to-refresh`. Only topics shared by at least 2 projects are listed; every project's own topics are also in its reference entry.
 
 Search this file for the kit, module or topic name rather than reading it whole.
@@ -189,7 +189,7 @@ How-to: how-to-use-HdsListItemCard
 ## @kit.UniversalKeystoreKit (1 project)
 How-to: how-to-implement-huks-attestation
 
-# Lite Wearable modules
+# SportWatch modules
 
 ## @ohos.router (25 projects)
 How-to: sportwatch-how-to-calculate-distance, sportwatch-how-to-implement-file-based-db, sportwatch-how-to-use-hce

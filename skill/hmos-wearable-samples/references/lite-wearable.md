@@ -1,4 +1,4 @@
-# Lite Wearable / Sportwatch projects (JavaScript)
+# SportWatch projects (JavaScript)
 
 85 projects. Each entry: what it demonstrates, the distinctive HarmonyOS kits or system modules it uses, its GitHub topics, the SDK version and the repository URL. Every entry starts with `### <repo-name>`, so search this file for a keyword, kit or topic instead of reading it top to bottom.
 

@@ -1,6 +1,6 @@
 ---
 name: hmos-wearable-samples
-description: Find working, open source HarmonyOS wearable code samples before writing wearable code from scratch. Covers 500+ Huawei watch projects (ArkTS smart wearables and JavaScript Lite Wearable sport watches) spanning sensors, health data, digital crown, watch faces, notifications, maps, audio, storage and UI components, plus environment setup, signing and on-device debugging. Use this skill whenever the user is building, debugging or asking about a HarmonyOS or HUAWEI WATCH app, ArkTS or ArkUI on a wearable, a Lite Wearable or sportwatch project, DevEco Studio, a @kit.* HarmonyOS API, or mentions HarmonyOS NEXT wearable development, even if they do not ask for a sample.
+description: Find working, open source HarmonyOS wearable code samples before writing wearable code from scratch. Covers 500+ Huawei watch projects (ArkTS smart wearables and JavaScript SportWatch (Lite Wearable) apps) spanning sensors, health data, digital crown, watch faces, notifications, maps, audio, storage and UI components, plus environment setup, signing and on-device debugging. Use this skill whenever the user is building, debugging or asking about a HarmonyOS or HUAWEI WATCH app, ArkTS or ArkUI on a wearable, a SportWatch or sportwatch project, DevEco Studio, a @kit.* HarmonyOS API, or mentions HarmonyOS NEXT wearable development, even if they do not ask for a sample.
 ---
 
 # HarmonyOS Wearable Samples
@@ -11,7 +11,7 @@ Anything you build for a Huawei watch probably already exists as a working refer
 
 HarmonyOS wearable development has two separate platforms that are easy to confuse, and a device setup flow that people routinely get stuck on. Getting these wrong costs hours:
 
-| | Smart Wearable | Lite Wearable (Sportwatch) |
+| | Smart Wearable | SportWatch |
 |---|---|---|
 | Devices | HUAWEI WATCH 5, WATCH 4 series | WATCH GT / FIT series |
 | Language | ArkTS, `.ets` files | JavaScript, HML, CSS |
@@ -24,16 +24,16 @@ A few repositories are phone-side companion apps (Android in Kotlin, iOS in Swif
 
 ## Workflow
 
-**1. Identify the capability.** Translate the request into a HarmonyOS kit, a Lite Wearable module, or a topic. "Read the user's heart rate" is `@kit.SensorServiceKit` or the `heart-rate` topic. "Scroll a list with the bezel" is the `digital-crown` topic. "Save settings" is `@kit.ArkData`. On a sport watch, "vibrate" is `@system.vibrator`.
+**1. Identify the capability.** Translate the request into a HarmonyOS kit, a SportWatch module, or a topic. "Read the user's heart rate" is `@kit.SensorServiceKit` or the `heart-rate` topic. "Scroll a list with the bezel" is the `digital-crown` topic. "Save settings" is `@kit.ArkData`. On a sport watch, "vibrate" is `@system.vibrator`.
 
-**2. Look it up.** Search `references/capability-lookup.md` first. It lists every project for each kit, Lite Wearable module and GitHub topic, and is the fastest path to a match. When the request is domain shaped rather than API shaped ("a fasting tracker", "a compass"), search the reference file for the platform instead. The reference files are large: search them for a keyword, kit or topic rather than reading them whole. Every entry starts with `### <repo-name>`.
+**2. Look it up.** Search `references/capability-lookup.md` first. It lists every project for each kit, SportWatch module and GitHub topic, and is the fastest path to a match. When the request is domain shaped rather than API shaped ("a fasting tracker", "a compass"), search the reference file for the platform instead. The reference files are large: search them for a keyword, kit or topic rather than reading them whole. Every entry starts with `### <repo-name>`.
 
 | File | Contents |
 |---|---|
 | `references/capability-lookup.md` | Project index by `@kit.*` kit, `@system.*` / `@ohos.*` module and GitHub topic |
 | `references/smart-wearable-how-to.md` | Focused ArkTS codelabs, one API or pattern each |
 | `references/smart-wearable-apps.md` | Complete ArkTS applications |
-| `references/lite-wearable.md` | Sportwatch projects in JavaScript |
+| `references/lite-wearable.md` | SportWatch projects in JavaScript |
 | `references/libraries-and-cross-platform.md` | Reusable ArkTS libraries, cross platform projects and phone-side companion apps |
 
 Each entry gives a description, the distinctive kits or modules it uses, its topics, the SDK version and the repository URL. Entries are grouped by domain: `ui-and-interaction`, `sensors-and-health`, `data-and-storage`, `media-and-audio`, `connectivity-and-network`, `location-and-maps`, `background-and-notifications`.
